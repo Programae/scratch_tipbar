@@ -1,0 +1,21 @@
+<html> <head><meta charset=utf-8><link href="../../../css/base.css" rel=stylesheet><link href="../../../css/modules/bootstrap-accordion.css" rel=stylesheet><link href="../../../css/pages/help.css" rel=stylesheet><link href="../../../css/modules/tabs.css" rel=stylesheet><link href="../../../css/modules/icons.css" rel=stylesheet><link href="../../../css/pages/tips.css" rel=stylesheet><link href="../../../css/modules/tip-bar.css" rel=stylesheet><script type=text/javascript src="../../../js/jquery.min.js"></script></head> <body id=tips-standalone class> <div id=tip-content> <div class=multi-step> <div class="progress-bar finished"> <span id=tip-progress-bar style=width:100%></span> </div> <div class=tutorial-dropdown-menu-bar> <h3 class=tutorial-menu-name> <a href="makey-intro.html">O MaKey MaKey e o Scratch</a> </h3> <div class=tutorial-dropdown-menu> <nav> <a href="makey8.html#.html" id=tutorial-menu-icon class=dropdown-closed></a> <ul style=display:none;> <li class=page-link> <a href="makey1.html"> <div class="index-num ">1</div> Conecte o MaKey MaKey </a> </li> <li class=page-link> <a href="makey2.html"> <div class="index-num ">2</div> Conecte à TERRA </a> </li> <li class=page-link> <a href="makey3.html"> <div class="index-num ">3</div> Conecte ao ESPAÇO </a> </li> <li class=page-link> <a href="makey4.html"> <div class="index-num ">4</div> Experimente! </a> </li> <li class=page-link> <a href="makey5.html"> <div class="index-num ">5</div> Programe e personalize </a> </li> <li class=page-link> <a href="makey6.html"> <div class="index-num ">6</div> Adicione mais teclas </a> </li> <li class=page-link> <a href="makey7.html"> <div class="index-num ">7</div> Experimente e crie </a> </li> <li class=page-link> <a href="makey8.html"> <div class="index-num active">8</div> Dica extra: teclas rápidas </a> </li> </ul> </nav> </div> </div> <div class=navcenter> <span class="navigate back"> <a href="makey7.html"><img src="../../../images/help/tip-arrow-back.png">Voltar</a> </span> </div> <h2>Dica extra: teclas rápidas</h2> <div class=steps> <p>Se você quer que seu script seja executado assim que você pressionar uma tecla, experimente esta combinação de blocos:</p> <p><img src="../../../images/help/ma-s8-i1.png"></p> </div> <div class="steps last"> <p>O bloco que envia a todos vai interromper o script que estava em execução, então o script é executado assim que você pressionar a tecla.</p> </div> <div class=scroll-gradient></div> </div> </div> <script type=text/javascript>
+      var Scratch = Scratch || {};
+      Scratch.INIT_DATA = Scratch.INIT_DATA || {};
+      Scratch.INIT_DATA.COI = {
+        TARGET_DOMAIN: "http://scratch.mit.edu"
+      };
+    </script> <script type=text/javascript src="../../../js/lib/json2.js"></script> <script type=text/javascript src="../../../js/lib/underscore-min.js"></script> <script type=text/javascript src="../../../js/lib/backbone-min.js"></script> <script type=text/javascript src="../../../js/bootstrap-accordion.js"></script> <script type=text/javascript src="../../../js/bootstrap-tab.js"></script> <script type=text/javascript src="../../../js/views/backbone-extensions.js"></script> <script type=text/javascript src="../../../js/views/cross-origin-interface.js"></script> <script type=text/javascript src="../../../js/views/tips.js"></script> <script type=text/javascript>
+      /* Initialize progress bar and navcenter translation */
+      $(function($){
+        $(document).on('click', '#tutorial-menu-icon', function() {
+            $('.tutorial-dropdown-menu nav ul').toggle();
+            if ($('#tutorial-menu-icon').hasClass('dropdown-opened')) {
+                $('#tutorial-menu-icon').removeClass('dropdown-opened');
+                $('#tutorial-menu-icon').addClass('dropdown-closed');
+            } else {
+                $('#tutorial-menu-icon').removeClass('dropdown-closed');
+                $('#tutorial-menu-icon').addClass('dropdown-opened');
+            }
+        })
+      });
+    </script> </body> </html>

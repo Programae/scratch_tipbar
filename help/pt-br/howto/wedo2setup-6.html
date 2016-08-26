@@ -1,0 +1,21 @@
+<html> <head><meta charset=utf-8><link href="../../../css/base.css" rel=stylesheet><link href="../../../css/modules/bootstrap-accordion.css" rel=stylesheet><link href="../../../css/pages/help.css" rel=stylesheet><link href="../../../css/modules/tabs.css" rel=stylesheet><link href="../../../css/modules/icons.css" rel=stylesheet><link href="../../../css/pages/tips.css" rel=stylesheet><link href="../../../css/modules/tip-bar.css" rel=stylesheet><script type=text/javascript src="../../../js/jquery.min.js"></script></head> <body id=tips-standalone class> <div id=tip-content> <div class=multi-step> <div class="progress-bar in-progress"> <span id=tip-progress-bar style=width:86%></span> </div> <div class=tutorial-dropdown-menu-bar> <h3 class=tutorial-menu-name> <a href="wedo2setup-intro.html">Configuração da extensão do LEGO WeDo 2.0</a> </h3> <div class=tutorial-dropdown-menu> <nav> <a href="wedo2setup-6.html#.html" id=tutorial-menu-icon class=dropdown-closed></a> <ul style=display:none;> <li class=page-link> <a href="wedo2setup-1.html"> <div class="index-num ">1</div> 1. Adicione a extensão </a> </li> <li class=page-link> <a href="wedo2setup-2.html"> <div class="index-num ">2</div> 2. Instale o Gerenciador de dispositivos </a> </li> <li class=page-link> <a href="wedo2setup-3.html"> <div class="index-num ">3</div> 3. Ligue o Bluetooth </a> </li> <li class=page-link> <a href="wedo2setup-4.html"> <div class="index-num ">4</div> 4. Clique em "Conectar" </a> </li> <li class=page-link> <a href="wedo2setup-5.html"> <div class="index-num ">5</div> 5. Pressione o botão WeDo </a> </li> <li class=page-link> <a href="wedo2setup-6.html"> <div class="index-num active">6</div> 6. Crie! </a> </li> <li class=page-link> <a href="wedo2setup-7.html"> <div class="index-num ">7</div> Solução de problemas </a> </li> </ul> </nav> </div> </div> <div class=navcenter> <span class="navigate back"> <a href="wedo2setup-5.html"><img src="../../../images/help/tip-arrow-back.png">Voltar</a> </span> <span class="navigate next"> <a href="wedo2setup-7.html"> Próximo <img src="../../../images/help/tip-arrow-forward.png"> </a> </span> </div> <h2>6. Crie!</h2> <div class=steps> <p>Você está pronto para começar! Você deve usar uma luz de status verde na paleta de blocos no Scratch, e uma lista de novos blocos para o WeDo. Comece a usar o Scratch!</p> <p><img src="../../../images/help/ext-status-green.png"></p> </div> <div class="steps last"> <p><span class=reminder>Toda vez que você iniciar um novo projeto, você precisa adicionar os blocos WeDo e clicar em 'Conectar' no Gerenciador de Dispositivos.</span></p> <a class=next-step-button href="wedo2setup-7.html">Veja dicas de solução de problemas</a> </div> <div class=scroll-gradient></div> </div> </div> <script type=text/javascript>
+      var Scratch = Scratch || {};
+      Scratch.INIT_DATA = Scratch.INIT_DATA || {};
+      Scratch.INIT_DATA.COI = {
+        TARGET_DOMAIN: "http://scratch.mit.edu"
+      };
+    </script> <script type=text/javascript src="../../../js/lib/json2.js"></script> <script type=text/javascript src="../../../js/lib/underscore-min.js"></script> <script type=text/javascript src="../../../js/lib/backbone-min.js"></script> <script type=text/javascript src="../../../js/bootstrap-accordion.js"></script> <script type=text/javascript src="../../../js/bootstrap-tab.js"></script> <script type=text/javascript src="../../../js/views/backbone-extensions.js"></script> <script type=text/javascript src="../../../js/views/cross-origin-interface.js"></script> <script type=text/javascript src="../../../js/views/tips.js"></script> <script type=text/javascript>
+      /* Initialize progress bar and navcenter translation */
+      $(function($){
+        $(document).on('click', '#tutorial-menu-icon', function() {
+            $('.tutorial-dropdown-menu nav ul').toggle();
+            if ($('#tutorial-menu-icon').hasClass('dropdown-opened')) {
+                $('#tutorial-menu-icon').removeClass('dropdown-opened');
+                $('#tutorial-menu-icon').addClass('dropdown-closed');
+            } else {
+                $('#tutorial-menu-icon').removeClass('dropdown-closed');
+                $('#tutorial-menu-icon').addClass('dropdown-opened');
+            }
+        })
+      });
+    </script> </body> </html>
