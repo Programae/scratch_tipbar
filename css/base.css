@@ -974,6 +974,14 @@ button.small>span.not-social-alert {
   background-position: -154px -7px ;
 }
 
+.social-icon.google-class {
+  background: url('../images/google-classroom-icon.png') no-repeat top;
+}
+
+.social-icon.google-class:hover {
+  background: url('../images/google-classroom-icon-hover.png') no-repeat top;
+}
+
 .icon.download {
   background: none;
   color: #fff;
