@@ -31,5 +31,5 @@ wget \
 
 4. Make it available on Github
 
-5. Your files should be made available online at https://programae.github.io/scratch_tipswindow/help/pt-br/home.html
+5. Your files should be made available online at https://programae.github.io/scratch_tipswindow/help/pt-br/home.html you should also be able to download everything as a .zip file from https://github.com/Programae/scratch_tipswindow/archive/master.zip
 
